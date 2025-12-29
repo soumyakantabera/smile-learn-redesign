@@ -41,13 +41,17 @@ const Header = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost" size="sm" className="gap-2">
-              <Phone className="w-4 h-4" />
-              Call Now
+            <Button variant="ghost" size="sm" className="gap-2" asChild>
+              <a href="tel:+918981672404">
+                <Phone className="w-4 h-4" />
+                Call Now
+              </a>
             </Button>
-            <Button variant="default" size="sm" className="gap-2">
-              <MessageCircle className="w-4 h-4" />
-              WhatsApp
+            <Button variant="default" size="sm" className="gap-2" asChild>
+              <a href="https://wa.me/918981672404" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-4 h-4" />
+                WhatsApp
+              </a>
             </Button>
           </div>
 
@@ -76,13 +80,17 @@ const Header = () => {
                 </a>
               ))}
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                <Button variant="outline" className="w-full gap-2">
-                  <Phone className="w-4 h-4" />
-                  Call Now
+                <Button variant="outline" className="w-full gap-2" asChild>
+                  <a href="tel:+918981672404">
+                    <Phone className="w-4 h-4" />
+                    Call Now
+                  </a>
                 </Button>
-                <Button variant="default" className="w-full gap-2">
-                  <MessageCircle className="w-4 h-4" />
-                  WhatsApp
+                <Button variant="default" className="w-full gap-2" asChild>
+                  <a href="https://wa.me/918981672404" target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="w-4 h-4" />
+                    WhatsApp
+                  </a>
                 </Button>
               </div>
             </nav>
