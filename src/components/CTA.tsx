@@ -18,13 +18,17 @@ const CTA = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button variant="hero-outline" size="xl" className="gap-2 bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20">
-              <MessageCircle className="w-5 h-5" />
-              Chat on WhatsApp
+            <Button variant="hero-outline" size="xl" className="gap-2 bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20" asChild>
+              <a href="https://wa.me/918981672404" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-5 h-5" />
+                Chat on WhatsApp
+              </a>
             </Button>
-            <Button size="xl" className="gap-2 bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-              <Phone className="w-5 h-5" />
-              Call Now
+            <Button size="xl" className="gap-2 bg-primary-foreground text-primary hover:bg-primary-foreground/90" asChild>
+              <a href="tel:+918981672404">
+                <Phone className="w-5 h-5" />
+                Call Now
+              </a>
             </Button>
           </div>
 
